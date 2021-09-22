@@ -18,12 +18,20 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    find_article
+  end
+
+  def edit
+    find_article
   end
 
   private
 
   def set_article_params
     params.require(:article).permit(:title, :content)
+  end
+
+  def find_article
+    @article = Article.find(params[:id])
   end
 end
