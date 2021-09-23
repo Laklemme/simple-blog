@@ -25,6 +25,15 @@ class ArticlesController < ApplicationController
     find_article
   end
 
+  def update
+    @article = find_article
+    if @article.update(set_article_params)
+      redirect_to @article
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def set_article_params
