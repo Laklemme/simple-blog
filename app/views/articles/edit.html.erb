@@ -1,0 +1,6 @@
+<h1>Edit your Article</h1>
+<%= simple_form_for @article, url: :article, method: :patch do |f| %>
+  <%= f.input :title, placeholder: @article.title %>
+  <%= f.input :content, placeholder: @article.content %>
+  <%= f.button :submit %>
+<% end %>
