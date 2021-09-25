@@ -1,22 +1,128 @@
+.wrapper-grid {
+  margin: 20px 30px;
+  padding: 20px 30px;
+  background-color: #9DBEB9;
+  border-radius: 25px;
+  justify-content: center;
+  h1 {
+    color: white;
+    margin: 15px 0px 25px 0px;
+    font-family: 'Poppins';
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: 25px;
+  padding-bottom: 15px;
 }
 
 .grid-1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
+  padding: 3rem;
+  background: #FF8882;
+
+  --notchSize: 20px;
+
+  clip-path:
+    polygon(
+      0% var(--notchSize),
+      var(--notchSize) 0%,
+      calc(100% - var(--notchSize)) 0%,
+      100% var(--notchSize),
+      100% calc(100% - var(--notchSize)),
+      calc(100% - var(--notchSize)) 100%,
+      var(--notchSize) 100%,
+      0% calc(100% - var(--notchSize))
+    );
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+  }
 }
 
 .grid-2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
+  padding: 3rem;
+  background: #FF8882;
+
+  --notchSize: 20px;
+
+  clip-path:
+    polygon(
+      0% var(--notchSize),
+      var(--notchSize) 0%,
+      calc(100% - var(--notchSize)) 0%,
+      100% var(--notchSize),
+      100% calc(100% - var(--notchSize)),
+      calc(100% - var(--notchSize)) 100%,
+      var(--notchSize) 100%,
+      0% calc(100% - var(--notchSize))
+    );
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+  }
 }
 
 .grid-3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
+  padding: 3rem;
+  background: #FF8882;
+
+  --notchSize: 20px;
+
+  clip-path:
+    polygon(
+      0% var(--notchSize),
+      var(--notchSize) 0%,
+      calc(100% - var(--notchSize)) 0%,
+      100% var(--notchSize),
+      100% calc(100% - var(--notchSize)),
+      calc(100% - var(--notchSize)) 100%,
+      var(--notchSize) 100%,
+      0% calc(100% - var(--notchSize))
+    );
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+  }
+}
+
+.right {
+  display: grid;
+  justify-items: right;
+  a {
+    text-decoration: none;
+    color: #FF8882;
+    margin-right: 45px;
+  }
 }
