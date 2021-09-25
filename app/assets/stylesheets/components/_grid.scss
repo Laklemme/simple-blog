@@ -16,6 +16,7 @@
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-column-gap: 25px;
   padding-bottom: 15px;
+  grid-row-gap: 15px;
 }
 
 .grid-1 {
@@ -40,7 +41,7 @@
       0% calc(100% - var(--notchSize))
     );
 
-  a {
+  p {
     text-decoration: none;
     color: white;
     font-family: 'Poppins';
@@ -73,7 +74,7 @@
       0% calc(100% - var(--notchSize))
     );
 
-  a {
+  p {
     text-decoration: none;
     color: white;
     font-family: 'Poppins';
@@ -106,7 +107,7 @@
       0% calc(100% - var(--notchSize))
     );
 
-  a {
+  p {
     text-decoration: none;
     color: white;
     font-family: 'Poppins';

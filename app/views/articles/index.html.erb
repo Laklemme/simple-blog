@@ -1,16 +1,16 @@
 <div class='wrapper-grid'>
   <h1>Interesting Articles</h1>
-  <% @articles.each_slice(3) do |three_articles| %>
-    <% three_articles.each_with_index do |article, index| %>
-      <%= link_to article_path(article) do %>
-        <div class='grid-container'>
-          <div class="grid-<%= index + 1%>">
-            <%= article.title %>
-          </div>
-        </div>
+  <div class='grid-container'>
+    <% @articles.each_slice(3) do |three_articles| %>
+      <% three_articles.each_with_index do |article, index| %>
+        <%= link_to article_path(article) do %>
+            <div class="grid-<%= index + 1%>">
+              <p><%= article.title %></p>
+            </div>
+        <% end %>
       <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 <div class='right'>
   <%= link_to 'Create a new article', new_article_path %>
