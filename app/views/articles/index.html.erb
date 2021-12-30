@@ -1,5 +1,17 @@
-<h1>Interesting Articles</h1>
-<% @articles.each do |article| %>
-<%= link_to article.title, article_path(article) %>
-<% end %>
-<%= link_to 'Create a new article', new_article_path %>
+<div class='wrapper-grid'>
+  <h1>Interesting Articles</h1>
+  <div class='grid-container'>
+    <% @articles.each_slice(3) do |three_articles| %>
+      <% three_articles.each_with_index do |article, index| %>
+        <%= link_to article_path(article) do %>
+            <div class="grid-<%= index + 1%>">
+              <a> <%= link_to article.title, article_path(article) %> </a>
+            </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<div class='right'>
+  <%= link_to 'Create a new article', new_article_path %>
+</div>

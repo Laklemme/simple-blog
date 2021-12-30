@@ -1,7 +1,13 @@
-<h1>Create your little piece of literature</h1>
-<%= simple_form_for @article, url: :articles, method: :post do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content %>
-  <%= f.button :submit %>
-<% end %>
-<%= link_to 'Back', articles_path %>
+<h1 class='pinkish'>Create your little piece of literature</h1>
+<div class='background-green padding'>
+  <%= simple_form_for @article, url: :articles, method: :post do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <div class='btn-pink' id='new'>
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+</div>
+<div class='right'>
+  <%= link_to 'Back', articles_path %>
+</div>

@@ -1,5 +1,17 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
-<%= link_to 'Edit article', edit_article_path(@article) %>
-<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= link_to 'Back', articles_path %>
+<div class='background-green'>
+  <h1><%= @article.title %></h1>
+  <div class='box-white'>
+    <p><%= @article.content %></p>
+  </div>
+  <div class='wrapper-btn'>
+    <div class='btn-pink'>
+      <%= link_to 'Edit article', edit_article_path(@article) %>
+    </div>
+    <div class='btn-pink'>
+      <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+</div>
+<div class='right'>
+  <%= link_to 'Back', articles_path %>
+</div>

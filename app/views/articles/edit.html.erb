@@ -1,7 +1,13 @@
-<h1>Edit your Article</h1>
-<%= simple_form_for @article, url: :article, method: :patch do |f| %>
-  <%= f.input :title, placeholder: @article.title %>
-  <%= f.input :content, placeholder: @article.content %>
-  <%= f.button :submit %>
-<% end %>
-<%= link_to 'Back', article_path(@article) %>
+<h1 class='pinkish'>Edit your Article</h1>
+<div class='background-green padding'>
+  <%= simple_form_for @article, url: :article, method: :patch do |f| %>
+    <%= f.input :title, placeholder: @article.title %>
+    <%= f.input :content, placeholder: @article.content %>
+    <div class='btn-pink' id='edit'>
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+</div>
+<div class='right'>
+  <%= link_to 'Back', article_path(@article) %>
+</div>
