@@ -1,0 +1,49 @@
+.background-green {
+  background-color: #9DBEB9;
+  border-radius: 25px;
+  margin: 50px 30px 15px 30px;
+}
+
+.background-green{
+  h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    padding-top: 15px;
+  }
+}
+
+.box-white {
+  background-color: white;
+  border-radius: 25px;
+  font-family: 'Poppins';
+  margin: 20px 15px;
+  padding: 10px 10px 5px 10px;
+}
+
+
+.btn-pink {
+  border-radius: 20%;
+  font-family: 'Poppins';
+  background-color: #FF8882;
+  padding: 3px 5px;
+  text-align: center;
+  width: fit-content;
+  margin: 5px 10px;
+}
+
+.btn-pink {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+}
